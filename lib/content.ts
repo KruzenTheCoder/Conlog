@@ -38,226 +38,84 @@ export const fallbackHomePage: PageRecord = {
 
 export const fallbackHomeSections: SectionRecord[] = [
   {
-    id: "s-stats",
+    id: "s-milestone",
     page_id: "home",
-    type: "global-presence",
+    type: "milestone",
     position: 1,
-    title: "A global footprint, built over decades.",
-    subtitle:
-      "Designed and manufactured at Dube TradePort, Durban — deployed across Africa, the Middle East and South America.",
+    title: "Celebrating 60 Years of Innovation",
+    subtitle: "Since 1965, Conlog has been a trusted leader in smart metering and energy management solutions, serving communities in over 58 countries and powering millions of homes and businesses.",
     data: {
-      stats: [
-        { label: "Smart meters deployed", value: 17_000_000, suffix: "+" },
-        { label: "Countries", value: 58, suffix: "+" },
-        { label: "Utility customers", value: 90, suffix: "+" },
-        { label: "Households with power", value: 50_000_000, suffix: "+" },
-      ],
+      body: "As we mark six decades of progress, we remain committed to shaping a smarter, more connected energy future.",
+      cta_label: "Learn more about our 60-year journey",
+      cta_url: "/about#60-years"
     },
   },
   {
     id: "s-pillars",
     page_id: "home",
-    type: "brand-pillars",
+    type: "pillars",
     position: 2,
-    title: "Innovation. Sustainability. Growth.",
-    subtitle:
-      "The three forces that drive Conlog's next decade of smart metering.",
+    title: "Driving innovation, sustainability and growth",
+    subtitle: null,
     data: {
       pillars: [
         {
-          icon: "Lightbulb",
-          title: "Innovation",
-          body: "A constantly-expanding open hub with dedicated resources — driving, developing and incubating ideas from every corner of the business so Conlog stays ahead of industry trends.",
+          name: "Innovation",
+          body: "With a constantly-expanding open hub with dedicated resources, Conlog drives, develops & incubates ideas from all corners of our business, empowering us to stay ahead of industry trends & disrupt the markets through innovation."
         },
         {
-          icon: "Leaf",
-          title: "Sustainability",
-          body: "Aligned with the UN Sustainable Development Goals — focused on people, planet and prosperity, with inclusive goal-setting and a culture of accountability.",
+          name: "Sustainability",
+          body: "Our sustainability strategy is aligned with the UN Sustainable Development Goals, focusing on people, planet & prosperity, while ensuring inclusive strategic goal-setting & instilling an internal culture of accountability."
         },
         {
-          icon: "TrendingUp",
-          title: "Growth",
-          body: "Elevating and growing our product range, pursuing global expansion, and deepening our understanding of customer needs to execute on our goals.",
-        },
-      ],
+          name: "Growth",
+          body: "We are committed to growth & improvement, elevating & growing our product range while pursuing global expansion, developing enhanced understandings of our customers’ needs, & developing our capacity to execute our goals."
+        }
+      ]
     },
   },
   {
-    id: "s-solutions",
+    id: "s-metrics",
     page_id: "home",
-    type: "solutions-grid",
+    type: "metrics",
     position: 3,
-    title: "Smart meters & accessories for electricity and water.",
-    subtitle:
-      "A proudly South African product range — our electrical meters are manufactured using 98% local materials, and water meters 85%.",
+    title: "A global footprint with local impact",
+    subtitle: null,
     data: {
-      cards: [
-        {
-          icon: "Cpu",
-          title: "iDM APEX · smart electricity meter",
-          description:
-            "Our flagship smart electricity meter — engineered for demand management, revenue protection and long service life.",
-          href: "/solutions/idm-apex",
-        },
-        {
-          icon: "Droplets",
-          title: "iDM Hydra · smart water meter",
-          description:
-            "Smart prepayment water meter for demand management and water conservation — built for harsh environments.",
-          href: "/solutions/idm-hydra",
-        },
-        {
-          icon: "CreditCard",
-          title: "Prepayment & vending",
-          description:
-            "STS token vending, CoDi revenue management, POS systems and customer self-service — channels, integrations and experience.",
-          href: "/solutions/prepayment-vending",
-        },
-        {
-          icon: "Cloud",
-          title: "Conlog Cloud Platform",
-          description:
-            "Resilient, secure cloud — on AWS or Microsoft Azure — for CoDi, POS and data storage, with high availability and disaster recovery.",
-          href: "/solutions/conlog-cloud-platform",
-        },
-      ],
+      metrics: [
+        { label: "Patents & trademarks", value: "200+" },
+        { label: "Countries", value: "58+" },
+        { label: "Smart meters deployed", value: "17M+" },
+        { label: "Households served", value: "50M+" }
+      ]
     },
   },
   {
-    id: "s-segments",
-    page_id: "home",
-    type: "market-segments",
-    position: 4,
-    title: "One platform, three market segments.",
-    subtitle:
-      "Conlog serves public energy utilities, private residential and commercial customers, and public water authorities.",
-    data: {
-      segments: [
-        {
-          icon: "Zap",
-          title: "Public Energy",
-          items: [
-            "Smart metering and demand response",
-            "Prepaid and post-paid metering solutions",
-            "Revenue enhancement solutions",
-            "Managed services",
-            "B2B and B2G engagements",
-          ],
-        },
-        {
-          icon: "Building2",
-          title: "Private residential & commercial",
-          items: [
-            "B2C and e-commerce (Conlog Direct)",
-            "Smart metering and demand response",
-            "Prepaid and post-paid metering solutions",
-            "Revenue enhancement solutions",
-            "Managed services",
-          ],
-        },
-        {
-          icon: "Droplets",
-          title: "Public Water",
-          items: [
-            "Smart metering and demand response",
-            "Prepaid and post-paid metering solutions",
-            "Revenue enhancement solutions",
-            "Managed services",
-          ],
-        },
-      ],
-    },
-  },
-  {
-    id: "s-why",
-    page_id: "home",
-    type: "why-choose-us",
-    position: 5,
-    title: "The Conlog difference",
-    subtitle:
-      "The only end-to-end metering manufacturer in sub-Saharan Africa — backed by nearly six decades of world-class manufacturing experience.",
-    data: {
-      reasons: [
-        {
-          title: "200+ patents & trademarks",
-          body: "A pioneering leader in prepayment since the late 1980s, with hundreds of world-firsts to our name.",
-        },
-        {
-          title: "Bespoke to your specification",
-          body: "We understand each customer's business and deliver market-led innovation to exact specifications.",
-        },
-        {
-          title: "B-BBEE Level 1",
-          body: "Proudly South African black industrialist company — with local shareholders and local manufacturing.",
-        },
-        {
-          title: "Multilingual systems",
-          body: "Platforms available in English, Arabic, French, Spanish and Portuguese — reaching millions across three continents.",
-        },
-      ],
-    },
-  },
-  {
-    id: "s-cases",
-    page_id: "home",
-    type: "case-studies-summary",
-    position: 6,
-    title: "Outcomes, not just installations.",
-    subtitle:
-      "Measured impact for the utilities and communities we serve — from dense urban feeders to national rollouts.",
-    data: null,
-  },
-  {
-    id: "s-innovation",
-    page_id: "home",
-    type: "innovation",
-    position: 7,
-    title: "Driving innovation through cloud-based technology.",
-    subtitle:
-      "Conlog's cloud service offering delivers a resilient and secure foundation for utilities — hosted on AWS or Microsoft Azure with high availability, fault tolerance and disaster recovery.",
-    data: {
-      pillars: [
-        { label: "Cloud infrastructure", value: "AWS · Azure" },
-        { label: "Availability", value: "HA & DR built-in" },
-        { label: "Platforms", value: "CoDi · POS · Data" },
-        { label: "Languages", value: "EN · AR · FR · ES · PT" },
-      ],
-    },
-  },
-  {
-    id: "s-awards",
-    page_id: "home",
-    type: "awards",
-    position: 8,
-    title: "Recognised for excellence",
-    subtitle:
-      "Decades of awards across metering, service, export excellence and sustainability.",
-    data: {
-      awards: [
-        "Inaugural Innovation Award for the prepayment industry",
-        "Best Metering Company Award — 6 of 8 times",
-        "Exporter of the Year Award",
-        "Metering Excellence Award — Service Desk (2010)",
-        "ESI Silver Award — Best Service Provider",
-        "Impumelelo Top 300 Black Empowered Companies",
-        "Technology Top 100 — ICT category, top three",
-        "5-Star Gold Cleaner Production — 2024 KZN Waste Management Awards",
-      ],
-    },
-  },
-  {
-    id: "s-cta",
+    id: "s-cta-1",
     page_id: "home",
     type: "cta-banner",
-    position: 9,
-    title: "Think smarter. Meter smarter.",
-    subtitle:
-      "Talk to a Conlog specialist about smart metering, prepayment, revenue enhancement and managed services.",
+    position: 4,
+    title: "Explore our product range",
+    subtitle: "Smart meters & accessories for electricity & water",
     data: {
-      ctaLabel: "Contact our team",
-      ctaHref: "/contact",
+      primary_label: "Explore our product range",
+      primary_url: "/solutions",
+      variant: "primary"
     },
   },
+  {
+    id: "s-cta-2",
+    page_id: "home",
+    type: "cta-banner",
+    position: 5,
+    title: "View our company profile",
+    subtitle: "Find out more about Conlog",
+    data: {
+      primary_label: "View our company profile",
+      primary_url: "/about",
+      variant: "secondary"
+    },
+  }
 ];
 
 export const fallbackSolutions: SolutionRecord[] = [
